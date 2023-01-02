@@ -1,0 +1,143 @@
+/**
+ * Copyright (c) Selfcity, Inc.
+ * All rights reserved.
+ */
+
+body,
+textarea {
+  font-size: 1rem;
+  color: var(--clr-accent-1-500);
+  font-family: var(--ff-poppins-400);
+}
+
+.ui-title {
+  line-height: 1.5;
+}
+// @include modifier(center) {
+//   text-align: center;
+// }
+
+//   @include modifier(1) {
+//     font-size: 1.25rem;
+//     font-family: var(--ff-poppins-700);
+
+//     .ui-markdown {
+//       @include modifier(emphasis) {
+//         font-family: var(--ff-poppins-700);
+//       }
+//     }
+//   }
+
+//   @include modifier(2) {
+//     font-size: 1.375rem;
+//     font-family: var(--ff-poppins-700);
+//   }
+
+//   @include modifier(3) {
+//     font-size: 1.25rem;
+//     font-family: var(--ff-poppins-500);
+//   }
+
+//   @include modifier(4) {
+//     font-size: 1.25rem;
+//     font-family: var(--ff-poppins-600);
+//   }
+
+//   @include modifier(5) {
+//     font-size: 1.125rem;
+//     font-family: var(--ff-poppins-500);
+//   }
+
+//   @include modifier(6) {
+//     font-size: 1.125rem;
+//     font-family: var(--ff-poppins-500);
+
+//     .ui-markdown {
+//       @include modifier(italic) {
+//         font-weight: 400;
+//         line-height: 1.6;
+//         font-family: var(--ff-poppins-400);
+//       }
+//     }
+//   }
+
+//   @include query(m) {
+//     @include modifier(1) {
+//       font-size: 1.625rem;
+//     }
+//   }
+// }
+
+.ui-p {
+  line-height: 1.5;
+
+  ul {
+    padding-left: 1.2rem;
+  }
+
+  // @include modifier(small) {
+  //   font-size: 0.75rem;
+  // }
+
+  // @include modifier(light) {
+  //   color: var(--clr-greys-600);
+  // }
+}
+
+// .ui-link {
+//   &,
+//   &:visited {
+//     color: var(--clr-greys-100);
+//     text-decoration: underline;
+//   }
+
+//   @include modifier(primary) {
+//     color: var(--clr-primary-500);
+//   }
+
+//   @include modifier(small) {
+//     font-size: 0.75rem;
+//   }
+
+//   @include modifier(light) {
+//     color: var(--clr-greys-600);
+//   }
+
+//   @include modifier(button) {
+//     max-width: 100%;
+//     overflow: hidden;
+//     user-select: none;
+//     width: fit-content;
+//     font-size: 0.875rem;
+//     text-decoration: none;
+//     transition: all 250ms;
+//     border-radius: var(--shp-default);
+//     padding: var(--gaps-2) var(--gaps-3);
+//     font-family: var(--ff-red-hat-display-500);
+
+//     @include modifier(primary) {
+//       color: var(--clr-greys-900);
+//       background: var(--clr-primary-500);
+
+//       &:hover {
+//         background: var(--clr-primary-600);
+//       }
+//       &:active {
+//         background: var(--clr-primary-400);
+//       }
+//     }
+//   }
+// }
+
+// .ui-markdown {
+//   @include modifier(emphasis) {
+//     color: var(--clr-primary-500);
+//     font-family: var(--ff-poppins-600);
+//   }
+//   @include modifier(strong) {
+//     font-family: var(--ff-poppins-700);
+//   }
+//   @include modifier(italic) {
+//     color: var(--clr-greys-600);
+//   }
+// }

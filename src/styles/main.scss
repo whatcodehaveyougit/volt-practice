@@ -1,2 +1,6 @@
-@import 'variables';
+@import '_variables';
+@import '_typography';
 @import 'biuty/core';
+
+// Cannot seem to import this
+// @import 'styles/components/_button';

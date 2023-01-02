@@ -1,0 +1,138 @@
+/**
+ * Copyright (c) Selfcity, Inc.
+ * All rights reserved.
+ */
+
+.ui-button {
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+  user-select: none;
+  width: fit-content;
+  font-size: 0.875rem;
+  transition: all 250ms;
+  border-radius: var(--shp-default);
+  padding: var(--gaps-2) var(--gaps-3);
+  @include extend(flex items-center hgap-2);
+
+  &__label {
+    width: 100%;
+    max-width: 100%;
+    line-height: 148%;
+    @extend %ellipsis;
+    text-align: center;
+    font-family: var(--ff-red-hat-display-500);
+  }
+
+  .ui-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  @include modifier(disabled) {
+    @extend %disabled;
+  }
+
+  @include modifier(icon) {
+    border-radius: var(--shp-icon);
+    padding: var(--gaps-2) var(--gaps-2);
+
+    .ui-icon {
+      margin: var(--gaps-1);
+    }
+  }
+
+  @include modifier(link) {
+    color: var(--clr-greys-600);
+    text-decoration: underline;
+  }
+
+  // @include modifier(floating) {
+  //   z-index: 1;
+  //   position: absolute;
+  //   border-radius: 100%;
+  //   right: var(--gaps-4);
+  //   bottom: var(--gaps-4);
+  //   padding: var(--gaps-3);
+  // }
+
+  @each $color in (primary, secondary, greys, accent-1, accent-2, accent-3) {
+    @include modifier($color) {
+      color: var(--clr-greys-900);
+      background: var(--clr-#{$color}-500);
+
+      .ui-icon {
+        background: var(--clr-greys-900);
+      }
+
+      &:hover,
+      &:focus,
+      &:focus-visible {
+        background: var(--clr-#{$color}-600);
+      }
+
+      &:active {
+        background: var(--clr-#{$color}-400);
+      }
+
+      @include modifier(outlined) {
+        color: var(--clr-#{$color}-500);
+        background: var(--clr-greys-900);
+        border: 1px solid var(--clr-#{$color}-500);
+
+        .ui-icon {
+          background: var(--clr-#{$color}-500);
+        }
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+          color: var(--clr-#{$color}-600);
+          border-color: var(--clr-#{$color}-600);
+
+          .ui-icon {
+            background: var(--clr-#{$color}-600);
+          }
+        }
+
+        &:active {
+          color: var(--clr-#{$color}-400);
+          border-color: var(--clr-#{$color}-400);
+
+          .ui-icon {
+            background: var(--clr-#{$color}-400);
+          }
+        }
+      }
+
+      @include modifier(text) {
+        background: none;
+        color: var(--clr-#{$color}-500);
+
+        .ui-icon {
+          background: var(--clr-#{$color}-500);
+        }
+
+        &:hover,
+        &:focus,
+        &:focus-visible {
+          color: var(--clr-#{$color}-600);
+          border-color: var(--clr-#{$color}-600);
+
+          .ui-icon {
+            background: var(--clr-#{$color}-600);
+          }
+        }
+
+        &:active {
+          color: var(--clr-#{$color}-400);
+          border-color: var(--clr-#{$color}-400);
+
+          .ui-icon {
+            background: var(--clr-#{$color}-400);
+          }
+        }
+      }
+    }
+  }
+}
